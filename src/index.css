@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --color-deep-red: #8B1A1A;
+  --color-red: #C41E3A;
+  --color-burnt-orange: #D4652F;
+  --color-warm-brown: #5C3317;
+  --color-cream: #FFF8F0;
+  --color-charcoal: #2D2D2D;
+  --color-gold: #D4A843;
+  --color-light-cream: #FFFDF9;
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-warm-brown) var(--color-cream);
+}
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-warm-brown);
+  border-radius: 4px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
